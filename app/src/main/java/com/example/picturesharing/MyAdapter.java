@@ -210,8 +210,6 @@ public class MyAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 shareId = (String) Datas.get(i).get("id");
-                System.out.println("MyAdapter.shareId.card"+shareId);
-                System.out.println("MyAdapter.userId.card"+userId);
                 Intent intent;
                 intent = new Intent(mContext, DetailPicActivity.class);
                 intent.putExtra("shareId", shareId);

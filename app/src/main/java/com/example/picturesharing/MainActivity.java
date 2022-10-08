@@ -33,6 +33,8 @@ import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.security.auth.DestroyFailedException;
+
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Headers;
@@ -57,11 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String avatar;
     String introduce;
     String sex;
-//    private User user;
     private Map<String,String> userData;
-
-//    private Intent nextPage;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,8 +83,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtn_sign.setOnClickListener(this);
         cBforget.setOnClickListener(this);
 
-
-
         //点击空白区域收起软键盘
         blank.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,22 +100,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.register://注册
                 startActivity(new Intent(MainActivity.this,signingActivity.class));
+                finish();
                 break;
             case R.id.sign://登录
                 //获取信息
                 musername =  mEtusename.getText().toString().trim();
                 mpassword = mEtpassword.getText().toString().trim();
-//                startActivity(new Intent(MainActivity.this,homepage.class));
+
                 post();
-//                if(TextUtils.isEmpty(musername)|| TextUtils.isEmpty(mpassword)){
-//                    Toast.makeText(getApplicationContext(),"不能为空",Toast.LENGTH_SHORT).show();
-//                }else {
-//
-//                    post();
-////                    Toast.makeText(getApplicationContext(),isLogin,Toast.LENGTH_SHORT).show();
-//                    startActivity(new Intent(MainActivity.this,homepage.class));
-//
-//                }
+
                 break;
             case R.id.forget_password:
                 startActivity(new Intent(MainActivity.this,NoThingActivity.class));

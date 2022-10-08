@@ -13,7 +13,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 
-//import cn.edu.cdut.app.adapter.MyFragmentPagerAdapter;
 public class homepage extends AppCompatActivity implements View.OnClickListener{
 
     private RadioGroup  mTabRadioGroup;

@@ -50,7 +50,6 @@ public class ShmineActivity extends AppCompatActivity {
         userid=myApp.getId();
 
         get();
-//        initView();
     }
 
 
@@ -70,34 +69,6 @@ public class ShmineActivity extends AppCompatActivity {
         });
 
 
-//        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {   //长按删除
-//            @Override
-//            public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
-//                Log.d("info","listView.长按");
-//                new AlertDialog.Builder(ShmineActivity.this) //弹出一个对话框
-//                        //.setTitle("确定要删除此便签？")
-//                        .setMessage("确定要删除此便签？")
-//                        .setNegativeButton("取消", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-//
-//                            }
-//                        })
-//                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
-//                            @Override
-//                            public void onClick(DialogInterface dialog, int which) {
-////                                myDatabase.toDelete(arrayList.get(position).getIds());
-////                                MyAdapter myAdapter = new MyAdapter(layoutInflater, arrayList);
-////                                listView.setAdapter(myAdapter);
-//
-//                                Toast.makeText(getApplicationContext(),"删除成功123",Toast.LENGTH_SHORT).show();
-//                            }
-//                        })
-//                        .create()
-//                        .show();
-//                return true;
-//            }
-//        });
 
 
     }
@@ -163,12 +134,10 @@ public class ShmineActivity extends AppCompatActivity {
 
             if(dataResponseBody.getData()==null){
                 startActivity(new Intent(ShmineActivity.this,NoThingActivity.class));
+                finish();
             }else {
                 lists = new ArrayList<Map<String, Object>>();
                 for (int i = 0; i < records.size(); i++) {
-//                Log.d("info", "onResponse: "+records.get(i).get("username"));
-//                Log.d("info", "onResponse: "+records.get(i).get("title"));
-//                Log.d("info", "onResponse: "+records.get(i).get("content")); returnBitMap(str[i])
                     Map<String, Object> map = new HashMap<>();
 
 

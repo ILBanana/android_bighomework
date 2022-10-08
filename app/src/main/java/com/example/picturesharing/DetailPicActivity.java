@@ -150,10 +150,6 @@ public class DetailPicActivity extends AppCompatActivity {
             }else {
                 tTcollectionnum.setText(""+(double)data.get("collectNum"));
             }
-
-//            if ((double)data.get("likeNum")==)
-//            tTlikenum.setText(""+(double)data.get("likeNum"));
-//            tTcollectionnum.setText(""+(double)data.get("collectNum"));
             tTtime.setText((String)data.get("createTime"));
             tTcontent.setText((String)data.get("content"));
             tTtitle.setText((String)data.get("title"));

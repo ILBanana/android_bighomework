@@ -180,7 +180,6 @@ public class signingActivity extends AppCompatActivity implements View.OnClickLi
             Type jsonType = new TypeToken<ResponseBody<Object>>(){}.getType();
             // 获取响应体的json串
             String body = response.body().string();
-//            Log.d("info", body);
             // 解析json串到自己封装的状态
             ResponseBody<Object> dataResponseBody = gson.fromJson(body,jsonType);
             Map<String,String> reData = (Map<String, String>) dataResponseBody.getData();
@@ -201,10 +200,10 @@ public class signingActivity extends AppCompatActivity implements View.OnClickLi
                             if(dataResponseBody.getCode() == 200){
                                 Toast.makeText(getApplicationContext(),"注册成功",Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(signingActivity.this,MainActivity.class));
-                                Log.d("info", "Sign onResponse: 注册成功");
+                                finish();
                             }else {
                                 Toast.makeText(getApplicationContext(),dataResponseBody.getMsg(),Toast.LENGTH_SHORT).show();
-                                Log.d("info", "Sign onResponse: 注册失败");
+
                             }
                         }
                     });

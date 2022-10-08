@@ -99,27 +99,25 @@ public class HomeActivity extends Fragment {
     private void initView() {
         listView = homeactivity.findViewById(R.id.listView);
 
-        //设置ListView子项的点击事件
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                System.out.println("HomeActivity.listview");
-//                startActivity(new Intent(getActivity(),NoThingActivity.class));
-            }
-        });
+//        //设置ListView子项的点击事件
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                System.out.println("HomeActivity.listview");
+//            }
+//        });
 
     }
 
     private void initData(List<Map<String, Object>> lists) {
         System.out.println(lists);
 
-        Log.d("info", "onResponse: " + lists);
         adapter = new MyAdapter(lists,getActivity());
         listView.post(new Runnable() {
             @Override
             public void run() {
                 listView.setAdapter(adapter);
-                System.out.println("刷新");
+
             }
         });
 
@@ -186,9 +184,7 @@ public class HomeActivity extends Fragment {
             lists = new ArrayList<Map<String, Object>>();
 
             for (int i = 0; i < records.size(); i++) {
-//                Log.d("info", "onResponse: "+records.get(i).get("username"));
-//                Log.d("info", "onResponse: "+records.get(i).get("title"));
-//                Log.d("info", "onResponse: "+records.get(i).get("content")); returnBitMap(str[i])
+
                 Map<String, Object> map = new HashMap<>();
 
 

@@ -2,6 +2,9 @@ package com.example.picturesharing;
 
 import android.app.Application;
 
+/**
+ * 存储用户信息
+ */
 public class MyApp extends Application {
     private String m_id;
     private String username;
@@ -32,8 +35,6 @@ public class MyApp extends Application {
     public void setShareId(String shareId){ this.shareId = shareId; }
     public String getShareId() { return shareId; }
 
-//    public void setUserId(String userId){ this.userId = userId; }
-//    public String getUserId() { return userId; }
 
     @Override
     public void onCreate() {

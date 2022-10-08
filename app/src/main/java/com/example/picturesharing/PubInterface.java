@@ -193,6 +193,7 @@ public class PubInterface extends AppCompatActivity {
                     .setType(MultipartBody.FORM)
                     .addFormDataPart("fileList",file.toString(), fileBody)
                     .build();
+
             //请求组合创建
             Request request = new Request.Builder()
                     .url(url)
@@ -231,7 +232,6 @@ public class PubInterface extends AppCompatActivity {
             Log.d("info", dataResponseBody.toString());
 
             Map<String,Object> data =  (Map<String,Object>) dataResponseBody.getData();
-            Log.d("info", "onResponse: "+data.get("imageCode"));
             imageCode = (String) data.get("imageCode");
             addPost();
         }
@@ -297,10 +297,9 @@ public class PubInterface extends AppCompatActivity {
             Type jsonType = new TypeToken<ResponseBody<Object>>(){}.getType();
             // 获取响应体的json串
             String body = response.body().string();
-            Log.d("info", body);
             // 解析json串到自己封装的状态
             ResponseBody<Object> dataResponseBody = gson.fromJson(body,jsonType);
-            Log.d("info", dataResponseBody.toString());
+
 
             /*-------------------自由编码------------------------*/
         }

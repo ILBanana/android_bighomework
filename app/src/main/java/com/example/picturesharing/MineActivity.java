@@ -102,10 +102,7 @@ public class MineActivity extends Fragment {
         id = getArguments().getString("id");
         musername = getArguments().getString("username");
         mpassword = getArguments().getString("password");
-//        savatar = getArguments().getString("password");
-        System.out.println("info.id:"+id);
-        System.out.println("info.musername"+musername);
-        System.out.println("info.mpassword"+mpassword);
+
         ProfileCard.setOnClickListener(new View.OnClickListener(){//跳转到修改信息的页面
             @Override
             public void onClick(View v){
@@ -154,8 +151,6 @@ public class MineActivity extends Fragment {
             }
         });
 
-
-//        Glide.with(this).load(savatar).into(iVportrait);
         initView();
                 return minepage;
     }
@@ -265,10 +260,10 @@ public class MineActivity extends Fragment {
             Type jsonType = new TypeToken<ResponseBody<Object>>(){}.getType();
             // 获取响应体的json串
             String body = response.body().string();
-//            Log.d("info", body);
+
             // 解析json串到自己封装的状态
             ResponseBody<Object> dataResponseBody = gson.fromJson(body,jsonType);
-//            Log.d("info", dataResponseBody.toString());
+
 
             Map<String,String> data = (Map<String,String>)dataResponseBody.getData();
             String msg = dataResponseBody.getMsg();
@@ -281,8 +276,6 @@ public class MineActivity extends Fragment {
             System.out.println("MineActivity.username:"+username);
             System.out.println("MineActivity.introduce:"+introduce);
 
-//            String imgUrlList = records.get(i).get("imageUrlList").toString();
-//            avatar = avatar.substring(1, avatar.length() - 1);
             if (username!=null){
                 tTname.post(new Runnable() {
                     @Override
