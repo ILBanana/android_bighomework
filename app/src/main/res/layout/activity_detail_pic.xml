@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPicActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/blue_700"
+            android:textSize="35dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/focus_list"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="141dp"
+                android:layout_marginRight="60dp"
+                android:clickable="true"
+                android:src="@drawable/guanzh_bk" />
+
+            <TextView
+                android:id="@+id/focusnum"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="114dp"
+                android:textColor="@color/fontcolor" />
+
+            <ImageView
+                android:id="@+id/collection_list"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="86dp"
+                android:clickable="true"
+                android:src="@drawable/collection_bk" />
+
+            <TextView
+                android:id="@+id/collectionnum"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="58dp"
+                android:textColor="@color/fontcolor" />
+
+            <ImageView
+                android:id="@+id/like_list"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="31dp"
+                android:layout_marginRight="60dp"
+                android:clickable="true"
+                android:src="@drawable/like_chos" />
+
+            <TextView
+                android:id="@+id/likenum"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/fontcolor"/>
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/fontcolor"
+            />
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#9C9C9C"
+            android:textSize="25dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="bottom">
+        <EditText
+            android:id="@+id/username_sign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/edit_tetx_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:hint="评论..."
+            android:textColor="@color/deep_fontcolor"
+            android:textColorHint="@color/fontcolor"
+            android:ems="10"
+            />
+        <Button
+            android:id="@+id/sign_true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn2"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="发表"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

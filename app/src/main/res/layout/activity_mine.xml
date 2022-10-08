@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    android:orientation="vertical"
+    tools:context=".MineActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_mine"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:paddingBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/mine_background"
+        >
+
+        <ImageView
+            android:id="@+id/portrait"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/portrait" />
+
+        <LinearLayout
+            android:id="@+id/tot_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/portrait"
+            android:orientation="horizontal">
+            <!-- 用户名-->
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/show_name"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sex_image"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tot_name"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@id/portrait"
+            android:src="@drawable/sex_no" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sex_image"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/portrait"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <!--个人简介显示-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="个人简介:"
+                android:textColor="@color/fontcolor"
+                android:textSize="15dp" />
+            <!-- 显示自定义的个人简介，修改颜色-->
+            <TextView
+                android:id="@+id/show_content"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:textColor="@color/fontcolor"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/totle"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mine_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/mine_background1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/cat" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我发布的"
+                android:textColor="@color/fontcolor"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/more1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/like_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/mine_background1"
+            android:layout_marginTop="8dp"
+
+            android:clickable="true"
+            >
+
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/like3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我喜欢的"
+                android:textColor="@color/fontcolor"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/more1" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/collection_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/mine_background1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/collection2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我收藏的"
+                android:textColor="@color/fontcolor"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/more1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/share_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/mine_background1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/guanzhu2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我关注的"
+                android:textColor="@color/fontcolor"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/more1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/more_list"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/mine_background1"
+            android:clickable="true"
+            >
+            <ImageView
+                android:layout_width="58dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/setting" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="@color/fontcolor"
+                android:textSize="18dp"
+                android:layout_gravity="center"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/more1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/quittv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"
+                android:text="退出登录"
+                android:textColor="@color/fontcolor" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

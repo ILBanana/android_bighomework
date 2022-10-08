@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/btn2.xml" value="0.3405" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/card_bk.xml" value="0.298" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/collection_bk.xml" value="0.298" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/edit_tetx_bg.xml" value="0.2925" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/edit_text_bg.xml" value="0.2925" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/frame.xml" value="0.3285" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/guanzh_bk.xml" value="0.298" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/ic_launcher_background.xml" value="0.276" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/like_chos.xml" value="0.298" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/mine_background.xml" value="0.302" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/mine_background1.xml" value="0.302" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/ripple_btn1.xml" value="0.2925" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/sign_bg.xml" value="0.2925" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/table_design_home.xml" value="0.176" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/drawable/table_design_mine.xml" value="0.138" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_detail_pic.xml" value="0.4" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_home.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_homepage.xml" value="0.536" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_mine.xml" value="0.4" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_no_thing.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_per_infor.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_pub_interface.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_shcollect.xml" value="0.3129528985507246" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_shfollow.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_shlike.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_shmine.xml" value="0.4" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/activity_signing.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/layout/list_item.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/menu/menu.xml" value="0.38645833333333335" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.27" />
+        <entry key="..\:/Androidproject/Picturesharing/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3035" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

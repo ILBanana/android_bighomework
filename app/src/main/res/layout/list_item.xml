@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    app:cardBackgroundColor="#00000000"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+        <!--图片-->
+        <ImageView
+            android:id="@+id/image_list"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+        <!--作者名字-->
+        <TextView
+            android:id="@+id/author_list"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/image_list"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/deep_fontcolor" />
+        <!--收藏-->
+
+        <!--显示内容-->
+
+        <ImageView
+            android:id="@+id/collection_list"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/image_list"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="45dp"
+            android:clickable="true"
+            android:src="@drawable/collection_bk" />
+
+        <ImageView
+            android:id="@+id/like_list"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/image_list"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:src="@drawable/like_chos" />
+
+        <ImageView
+            android:id="@+id/focus_list"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/image_list"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="81dp"
+            android:layout_marginRight="60dp"
+            android:clickable="true"
+            android:src="@drawable/guanzh_bk" />
+
+        <TextView
+            android:id="@+id/title_list"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/author_list"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/blue_700" />
+
+        <TextView
+            android:id="@+id/content_list"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/title_list"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/fontcolor" />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
